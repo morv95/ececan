@@ -39,13 +39,6 @@ export default function Intro({ onComplete }: { onComplete: () => void }) {
         <div className="absolute inset-0 bg-black/10" />
       </div>
 
-      {/* Centered Logo Only */}
-      <div className={`absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ${isOpening ? "opacity-0 translate-y-10" : "animate-fade-in-up"}`}>
-        <div className="w-24 h-24 border border-white/40 rounded-full flex items-center justify-center bg-transparent animate-pulse-slow shadow-2xl shadow-black/10">
-            <span className="font-serif text-4xl tracking-widest text-white drop-shadow-md">E&C</span>
-        </div>
-      </div>
-
       {/* Bottom CTA Text */}
       <div className={`absolute bottom-8 left-0 right-0 z-20 text-center pb-[env(safe-area-inset-bottom)] transition-all duration-700 ${isOpening ? "opacity-0 translate-y-10" : "animate-fade-in-up"}`}>
          <div className="space-y-3 text-white drop-shadow-sm px-6">
