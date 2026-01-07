@@ -9,6 +9,44 @@
   --color-cream: #fbf9f6;
   --color-dark-text: #4a4a4a;
   --color-gold-accent: #bfa05f;
+
+  --animate-fade-in-up: fadeInUp 1s ease-out forwards;
+  --animate-fade-out-up: fadeOutUp 1s ease-in forwards;
+  --animate-scale-in: scaleIn 1.5s ease-out forwards;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
 
 html {
