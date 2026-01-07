@@ -3,9 +3,19 @@
 @theme {
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-lato);
+
+  --color-rose-gold: #c59d9d;
+  --color-champagne: #f0e6d2;
+  --color-cream: #fbf9f6;
+  --color-dark-text: #4a4a4a;
+  --color-gold-accent: #bfa05f;
 }
 
-/* Custom Utilities if needed */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark-text);
 }

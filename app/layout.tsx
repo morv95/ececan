@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body className={`${playfair.variable} ${lato.variable} font-sans antialiased bg-[#fdfbf7] text-gray-800`}>
+      <body className={`${playfair.variable} ${lato.variable} font-sans antialiased bg-cream text-dark-text`}>
         {children}
       </body>
     </html>
